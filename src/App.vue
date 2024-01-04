@@ -1,17 +1,17 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Hola a tu Vue.js App"/>
-  <HelloWorld msg="Componenete reusado.js App"/>
-  <HelloWorld msg="Hello world"/>
+  <Contador :Titulo = "1"/>
+  <Contador :Titulo = "2"/>
+  <Contador :Titulo = "3"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Contador from './components/ContadorPrincipal.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Contador
   }
 }
 </script>
@@ -21,7 +21,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #1170ce;
+  margin-top: 60px solid;
+  margin: solid;
 }
 </style>
