@@ -1,19 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <Contador :Titulo = "1"/>
-  <Contador :Titulo = "2"/>
-  <Contador :Titulo = "3"/>
+  <img alt="Vue logo" src="./assets/logo.png" />
+  <h2>Estilo de h2</h2>
+  <Contador Titulo="Contador1" :valor="10" />
+  <Contador Titulo="Contador2" :valor="calculo()" />
+  <Contador Titulo="Contador3" />
 </template>
 
 <script>
-import Contador from './components/ContadorPrincipal.vue';
+import Contador from "./components/ContadorPrincipal.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Contador
-  }
-}
+    Contador,
+  },
+  methods: {
+    calculo() {
+      return 5 + 5 * 10;
+    },
+  },
+};
 </script>
 <style>
 #app {
