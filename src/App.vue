@@ -6,20 +6,22 @@
     <Contador Titulo="Contador3" /> -->
   <!-- <Calculadora></Calculadora> -->
     <Pregunta></Pregunta>
+    <!-- <Pokemon></Pokemon> -->
 </template>
 
 <script>
 import Contador from "./components/ContadorPrincipal.vue";
 import Calculadora from "./components/Calculadora.vue";
 import Pregunta from "./components/Pregunta.vue";
-
+import Pokemon from "./components/Pokemon.vue";
 
 export default {
   name: "App",
   components: {
     Contador,
     Calculadora,
-    Pregunta
+    Pregunta,
+    Pokemon
   },
   methods: {
     calculo() {
