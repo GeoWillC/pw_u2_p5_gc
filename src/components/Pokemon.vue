@@ -1,18 +1,23 @@
 <template>
   <div>
     <label id="ingreso" for="codigo">Ingrese un numero y presione enter</label>
+    <br>
     <input @keypress.enter="procesado()" v-model="pid" id="codigo" type="text">
     <br>
     <label for="codigo">Name:</label>
+    <br>
     <input v-model="uno" type="text">
     <br>
     <label for="codigo">Height:</label>
+    <br>
     <input v-model="dos" type="text">
     <br>
     <label for="codigo">Weight: </label>
+    <br>
     <input v-model="tres" type="text">
     <br>
     <label for="codigo">Base experience:</label>
+    <br>
     <input v-model="cuatro" type="text">
 
   </div>
@@ -46,12 +51,10 @@ export default {
       this.dos = height
       this.tres = weight
       this.cuatro = base_experience
-      
     }
   },
   watch: {
   pid(value, oldValue) {
-       this.procesado()
        console.log(value)
        console.log(oldValue)
      }
@@ -67,10 +70,15 @@ export default {
 } 
  *{
   background-color: #3B4CCA;
-  font-size: 50px;
+  font-size: 30px;
   
  }
  label{
   color: antiquewhite;
+  border: none;
+ }
+ input{
+  background-color: 	#ffdc18cc;
+  text-align: center;
  }
 </style>

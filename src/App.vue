@@ -5,8 +5,8 @@
     <Contador Titulo="Contador2" :valor="calculo()" />
     <Contador Titulo="Contador3" /> -->
   <!-- <Calculadora></Calculadora> -->
-    <Pregunta></Pregunta>
-    <!-- <Pokemon></Pokemon> -->
+    <!-- <Pregunta></Pregunta> -->
+    <Pokemon></Pokemon>
 </template>
 
 <script>
