@@ -19,7 +19,6 @@
     <label for="codigo">Base experience:</label>
     <br>
     <input v-model="cuatro" type="text">
-
   </div>
 </template>
 

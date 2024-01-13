@@ -1,6 +1,5 @@
 <template>
   <img v-if="imgUrl" v-bind:src="imgUrl" alt="No pudo renderizar" />
-  <div class="dark"></div>
   <h1>Pregunta del futuro</h1>
   <!-- <h2>{{question}}</h2> -->
   <div class="container">
@@ -74,7 +73,7 @@ export default {
 </script>
 
 <style scoped>
-.dark,
+
 img {
   /* 100% del alto de la pagina web */
   height: 100vh;
@@ -106,7 +105,6 @@ input:focus {
 
 
 .container {
-
   position: relative;
 }
 
