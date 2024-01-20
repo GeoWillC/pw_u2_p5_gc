@@ -1,18 +1,27 @@
 <template>
     <div class="option-container"></div>
     <ul>
-        <li v-for="n in 4">nombre</li>
+        <li v-on:click="$emit('seleciono',{id:pokemon.id,nom:'pepito',edad:pokemon.id,hobby:pokemon.nombre})" v-for="pokemon in pokemons" :key="pokemon.id">{{ pokemon.nombre }}</li>
     </ul>
 </template>
 <script>
 
 export default {
-
+    props:{
+        pokemons:{
+            type:Array,
+            requeried:true
+        }
+    },
     data() {
         return {
 
         }
-    }
+    },
+    method:{
+       
+    },
+
 }
 </script>
 
