@@ -1,7 +1,6 @@
 <template>
-    <div class="pokemon-container"></div>
     <img :src="nombreSrc" alt="No se ve xD" class="ocultar">
-    <img :src="nombreSrc" alt="No se ve xD" v-if="true">
+    <img :src="nombreSrc" alt="No se ve xD" v-if="showPokemon">
 </template>
 <script>
 export default {
@@ -19,7 +18,7 @@ export default {
     },
     data() {
         return {
-            name:null
+            name: null
         }
     },
     methods: {
@@ -36,12 +35,19 @@ export default {
 </script>
 
 <style>
-.ocultar {
-    filter: brightness(0);
-    position: absolute;
+.pokemon-container {
+    height: 200px;
+    /* width: 400px; */
 }
 
-.pokemon container {
+.ocultar {
+    filter: brightness(0);
+}
+
+img {
     height: 200px;
+    position: absolute;
+    /*Aqui se monta la imagen encima de tu otra imagen */
+    right: 44%;
 }
 </style>

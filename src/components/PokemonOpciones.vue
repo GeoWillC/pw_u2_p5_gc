@@ -1,12 +1,13 @@
 <template>
-    <h1>Adivina el pokemon</h1>
     <div class="option-container"></div>
     <ul>
         <li v-for="n in 4">nombre</li>
     </ul>
 </template>
 <script>
+
 export default {
+
     data() {
         return {
 
@@ -15,27 +16,29 @@ export default {
 }
 </script>
 
-<style>
-ul{
+<style scoped>
+ul {
     list-style-type: none;
     align-items: center;
 }
-li{ 
+
+li {
     cursor: pointer;
     background-color: white;
-    border-radius: 5px ;
+    border-radius: 5px;
     border: 1px solid rgb(204, 200, 200);
     width: 120px;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
 }
-li:hover{
-    background-color: rgb(0, 0, 0,0.1);
+
+li:hover {
+    background-color: rgb(0, 0, 0, 0.1);
 }
-.option-container{
+
+.option-container {
     display: flex;
     justify-content: center;
 }
-
 </style>
