@@ -1,16 +1,17 @@
 <template>
     <div class="option-container"></div>
     <ul>
-        <li v-on:click="$emit('seleciono',{id:pokemon.id,nom:'pepito',edad:pokemon.id,hobby:pokemon.nombre})" v-for="pokemon in pokemons" :key="pokemon.id">{{ pokemon.nombre }}</li>
+        <li v-on:click="$emit('seleciono', { id: pokemon.id, nom: 'pepito', edad: pokemon.id, hobby: pokemon.nombre })"
+            v-for="pokemon in pokemons" :key="pokemon.id">{{ pokemon.nombre }}</li>
     </ul>
 </template>
 <script>
 
 export default {
-    props:{
-        pokemons:{
-            type:Array,
-            requeried:true
+    props: {
+        pokemons: {
+            type: Array,
+            requeried: true
         }
     },
     data() {
@@ -18,8 +19,8 @@ export default {
 
         }
     },
-    method:{
-       
+    method: {
+
     },
 
 }
